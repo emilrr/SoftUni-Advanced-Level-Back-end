@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Simple Calculator</title>
+	<style type="text/css">
+		table {
+	        background-color:#A5A5A5;
+	        border:2px solid #CCCCCC;
+	        border-radius: 5px;
+	        font-family: Consola;
+	        margin:auto;
+		}
+
+		td {
+		    width: 70px;			
+		    height: 60px;
+		    border-radius: 5px;
+		    padding: 5px;
+			overflow: hidden;
+		}
+
+
+		th#display {			
+		    height: 50px;
+			font-weight: normal;
+			font-size: 1.5em;
+			text-align: right;
+			border: 3px solid grey;
+			background: white;
+			margin-right: 15px;
+   			margin-left: 15px;
+
+		}
+
+		button {
+			background: linear-gradient(#ffffff, #a7a7a7);
+			text-align: center;
+			text-decoration: none;
+			font-size: 1.2em;
+			cursor: pointer;
+			margin: 2;
+			width: 100%;
+		    height: 100%;
+		    border-radius: 5px;
+		}
+
+		button:hover {
+		    background: rgba(113, 50, 44, 0.3);
+		    border: 1px solid #ff6a00;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		function insertData(key) {
+            document.getElementById("display").textContent += key;
+        }
+        function Calculate() {
+            var expression = document.getElementById("display").innerHTML;
+            var result = eval(expression);
+            clearDisplay();
+            insertData(result);
+        }
+        function clearDisplay() {
+            document.getElementById("display").textContent = "";
+        }
+	</script>
+</head>
+
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th colspan="4" id="display"></th>
+			</tr>
+		</thead>
+	
+		<tbody>
+			<tr>
+				<td><button onclick="insertData(7)">7</button></td>
+				<td><button onclick="insertData(8)">8</button></td>
+				<td><button onclick="insertData(9)">9</button></td>
+				<td><button onclick="insertData(' + ')">+</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="insertData(4)">4</button></td>
+				<td><button onclick="insertData(5)">5</button></td>
+				<td><button onclick="insertData(6)">6</button></td>
+				<td><button onclick="insertData(' - ')">-</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="insertData(1)">1</button></td>
+				<td><button onclick="insertData(2)">2</button></td>
+				<td><button onclick="insertData(3)">3</button></td>
+				<td><button onclick="insertData(' * ')">*</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="clearDisplay()">C</button></td>
+				<td><button onclick="insertData(0)">0</button></td>
+				<td><button onclick="Calculate()">=</button></td>
+				<td><button onclick="insertData('/')">/</button></td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<title>Website Header</title>
+	<style type="text/css">
+	* {
+		    margin: 0;
+		    padding: 0;
+		}
+
+		table {
+			background: #234465;	
+			border: none;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		body, a {
+			text-decoration: none;
+			font-family: Tahoma, sans-serif;
+			font-size: 0.9em;
+			color: #fff;
+		}
+
+		td {
+		    padding: 0 5px 0 5px;
+		    text-align: right;
+		}
+
+		tr {
+		    width: 1260px;
+		}
+
+		form {
+		    background: white;  
+		}
+
+		input, button {
+		    border: none;
+		    padding: 2px;
+		    font-family: Arial, Helvetica, sans-serif;
+		    color: black;
+		    vertical-align: middle;
+		    border-radius: 5px;
+		}
+
+		input:focus, button:focus {
+		    outline: none;
+		}
+
+		button:hover {
+		    background: orange;
+			cursor: pointer;
+		}
+
+		input[type=text] {
+		    width: 200px;
+		}
+
+		td > a:hover {
+		    color: orange;
+		    text-decoration: underline;
+		}
+		
+		#container{
+			background:  #234465;
+			margin: 0;
+		}
+
+		td.magnifier {
+			font-size: 20px;
+			color: #fff;
+
+		}
+
+		td.space {
+		    width: 400px;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<div class="container">
+		<table>
+			<tr>
+				<td id="logo"><a href="https://softuni.bg/" title="Home">
+					<img src="Resources/SoftUni-Logo.png" alt="Logo" width="184" height="35"/></a>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td>
+								<table>
+									<tr>
+										<td class="space"></td>
+										<td>
+											<a href="https://softuni.bg/about" title="More about SoftUni">SoftUni</a>
+										</td>
+										<td>
+											<a href="https://softuni.bg/trainings/courses/list" title="List of courses">Trainings
+											</a>
+										</td>
+										<td>
+											<a href="https://softuni.bg/companies" title="Companies">Jobs</a>
+										</td>
+										<td>
+											<a href="https://softuni.bg/partners" title="Information for partners">Partners</a>
+										</td>
+										<td>
+											<a href="https://softuni.bg/contacts" title="Contact us">Contacts</a>
+										</td>
+										<td id="unread-notifications">
+											<a href="https://softuni.bg/notifications" title="View all notifications"> 0
+											<img src="Resources/notifications.jpg" alt="Notifications"></a>
+										</td>
+										<td class="magnifier"></td>
+										<td>
+											<a href="https://softuni.bg/users/profile/show" title="View profile">
+											<img src="Resources/user.png" alt="User"></a>
+										</td>
+										<td>
+											<form method="get" action="http://softuni.bg/Search/Results?query=" target="_blank">
+												<input type="text" name="query" placeholder="Search SoftUni..." />
+												<button onclick="javascript: submitForm()" title="Search">
+												<i class="fa fa-search"></i></button>
+											</form>
+										</td>							
+									</tr>
+									<tr>					
+
+								</table>
+								
+							</td>
+						</tr>
+						
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+</html>

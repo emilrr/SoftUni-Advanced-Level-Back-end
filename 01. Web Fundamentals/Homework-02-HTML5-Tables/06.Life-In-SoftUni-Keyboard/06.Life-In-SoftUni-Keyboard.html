@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>"Life In SoftUni" Keyboard</title>
+	<style type="text/css">
+	* {
+		    margin: 0;
+		    padding: 0;
+		}
+
+		table{
+			border: 1px solid black;
+			padding: 2px;
+			margin: 10px;
+		}
+
+		td, th{
+		    border: 1px solid black;
+		    width: 110px;
+		    height: 120px;
+		    padding: 5px;
+		}
+
+		tr{
+			height: 50px;
+		}
+
+		td{
+			width: 80px;
+			border: solid 1px white;
+			height: 100%;
+		}
+
+		td, th{
+			background-color: #B8B8B8;
+		    text-align: center;
+		}
+
+		td.right button{
+		    text-align: right;
+		}
+
+		table th{
+			font-size: 0.7em;
+		}		
+
+		table tr td table tr td {
+			width: 100px;
+		    height: 25px;
+		}
+
+		table tr td table tr td button{
+			font-size: 1em;
+		}
+
+		table tr td table {
+			margin: 0;
+			padding: 0;
+		}
+
+		button {
+		    width: 100%;
+		    height: 100%;
+		    border-radius: 5px;  
+		    border: 2px solid  grey; 
+		    font-family: Tahoma;
+		    font-size: 1.2em;
+		    text-align: center;
+		    color: blue;
+		    background: linear-gradient(#F0F0F0 0, #F0F0F0 50%, #D4D4D4 51%, #D4D4D4 100%);
+		}
+
+		button:hover {
+		    background: linear-gradient(white, orange);
+		}
+
+		th button {
+		    font-size: 2.5em;
+		    font-weight: bold;
+		}
+
+		table#t01 {
+		    height: 50%; 
+		    font-size: 0.75em;   
+		}
+ 
+		</style>
+		
+</head>
+
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th colspan="4">
+					<button title="Go to softuni.bg" onclick="window.open('http://softuni.bg','_blank');">
+						Software University
+					</button>
+				</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td colspan="2">
+					<button title="Go to google.com" onclick="window.open('http://google.com','_blank');">
+						Google
+					</button>
+				</td>
+				<td colspan="2">
+					<button title="Go to github.com" onclick="window.open('https://github.com/','_blank');">
+						GitHub
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button title="Go to facebook.com" onclick="window.open('https://facebook.com/','_blank');">
+						FB
+					</button>
+				</td>
+				<td>
+					<button title="Go to gmail.com" onclick="window.open('https://gmail.com/','_blank');">
+						GMail
+					</button>
+				</td>
+				<td>
+					<button title="Go to youtube.com" onclick="window.open('https://youtube.com/','_blank');">
+						YouTube
+					</button>
+				</td>
+				<td>
+					<button title="Go to 2048game.com" onclick="window.open('http://2048game.com/','_blank');">
+						2048
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button title="Go to food.com" onclick="window.open('http://food.com/','_blank');">
+						Food
+					</button>
+				</td>
+				<td colspan="2">
+					<button title="Go to games.com" onclick="window.open('http://games.com/','_blank');">
+						Games
+					</button>
+				</td>
+				<td>
+					<table id="t01">
+						<tr>
+							<td>
+								<button title="Go to social-life.co/" onclick="window.open('http://www.social-life.co/','_blank');">Social Life
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<button title="Go to wikipedia.org" onclick="window.open('https://en.wikipedia.org/wiki/Sleep','_blank');">	Sleep
+								</button>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" class="right">
+					<button title="Go to theoatmeal.com" onclick="window.open('http://theoatmeal.com/comics/beer','_blank');">
+						Beer>
+					</button>
+				</td>
+				<td>
+					<button title="Go to fifa.com" onclick="window.open('http://www.fifa.com/worldcup/','_blank');">
+						WC
+					</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
