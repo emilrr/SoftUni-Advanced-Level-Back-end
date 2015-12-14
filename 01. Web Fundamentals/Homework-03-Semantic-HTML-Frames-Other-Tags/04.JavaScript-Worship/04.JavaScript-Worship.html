@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Worship</title>
+</head>
+<body>
+		<canvas id="JavaScriptWorkship" width="360" height="360"></canvas>
+		<script type="text/javascript">
+			var canvas = document.getElementById("JavaScriptWorkship");
+			canvas.width = 420;
+			canvas.height = 400;
+			var ctx = canvas.getContext('2d');
+			ctx.beginPath();
+			ctx.setLineDash([5]);
+			ctx.strokeStyle = 'red';
+			ctx.rect(0, 0, 420, 400);
+			ctx.lineWidth = 10;
+			ctx.stroke();
+			ctx.beginPath();
+			ctx.fillStyle = "black";
+			ctx.font = "50px Tahoma";
+			ctx.fillText("I love JavaScript",25,60);
+			ctx.beginPath();
+			ctx.fillStyle = "rgb(241, 218, 78)";
+			ctx.fillRect(90, 100, 230, 230);
+			ctx.beginPath();
+			ctx.fillStyle = "rgb(50, 52, 47)";
+            ctx.font = "bolder 130px Arial";
+            ctx.fillText("JS", 150, 310);
+		</script>
+</body>
+</html>
