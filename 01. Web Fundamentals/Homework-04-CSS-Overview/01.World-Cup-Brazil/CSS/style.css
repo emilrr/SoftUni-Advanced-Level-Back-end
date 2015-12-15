@@ -1,0 +1,240 @@
+html {
+    font-family: "Segoe UI", "Helvetica", "Tahoma", San-serif;
+}
+
+#background {
+	width: 1200px;
+	height: 450px;
+	background-color: #09BA0C;
+	margin: auto;
+	padding-top: 20px;
+}
+
+table {
+	border: 0.2px solid black;
+	border-radius: 20px;
+	background: white;
+	width: 1154px;
+	height: 430px;
+	margin: auto;
+	background-color: black;
+}
+
+thead tr {
+	height: 60px;
+}
+
+tbody tr {
+	height: 57px;
+}
+
+tbody tr:nth-child(even) {
+	background: #CCC
+}
+
+tbody tr:nth-child(odd) {
+	background: #FFF
+}
+
+table td{
+    border: solid 0.2px black;
+    font-size: 20px;
+    text-align: center;  
+}
+
+table thead td:nth-child(1) {
+	border-top-left-radius: 17px;
+	text-align: right;
+	padding-right: 5px;
+	width: 200px;
+}
+
+table thead td:nth-child(3) {
+	text-align: left;
+	padding-left: 5px;
+	width: 200px;
+
+}
+
+table thead td:last-child {
+	border-top-right-radius: 17px;
+	text-align: center;
+}
+
+table tbody tr:last-child td:nth-child(1){
+	border-bottom-left-radius: 17px;
+}
+
+table tbody tr:last-child td:last-child{
+	border-bottom-right-radius: 17px;
+}
+
+table tbody td:nth-child(1) {
+	text-align: right;
+	width: 200px;
+}
+
+table thead {
+	font-size: 1.2em;
+	font-weight: bold;
+	height: 60px;
+	padding-top: 0;
+	background: #f8c711;
+}
+ 
+table tbody {
+	background: white;
+}
+
+table tbody {
+	font-size: 0.75em;
+}
+
+table tbody td:nth-child(1){
+	text-align: right;
+	padding-right: 40px;
+	width: 180px;
+}
+
+table tbody td:nth-child(3){
+	text-align: left;
+	padding-left: 40px;
+	width: 180px;
+}
+
+table tbody td:nth-child(5){
+	text-align: right;
+	padding-right: 5px;
+	width: 170px;
+}
+
+table tbody td:nth-child(6){
+	width: 130px;
+}
+
+table tbody td:nth-child(7){
+	text-align: left;
+	padding-left: 5px;
+	width: 165px;
+}
+
+table tbody td:nth-child(8){
+	width: 65px;
+	padding-left: 15px;
+}
+
+select {
+	font-size: 0.7em;
+	padding: 0.3em;
+}
+
+
+button {
+    display:block;
+    width:46px;
+    height:46px;
+    line-height:43px;
+    border: 1.5px solid #f5f5f5;
+    border-radius: 50%;
+    color: white;
+    text-align:center;
+    text-decoration:none;
+    background: #008000;
+    box-shadow: 0 0 3px gray;
+    font-size:15px;
+    font-weight:bold;
+}
+.red-button {
+	background: red;
+}
+button:hover {
+    background: #262626;
+}
+
+input.goals-count {
+	height: 42px;
+	width: 42px;
+	background: #dcdcdc;
+	border: 1px solid #a9a9a9;
+	color: red;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+input[type="number"]:disabled:hover {
+	background: grey;
+	color: red;
+}
+
+input[type="number"]:hover {
+	background: darkgrey;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+}
+
+.br, .sp, .it, .ar, .ge{
+    padding-right: 40px;
+    position: relative;
+}
+
+.br:after,.sp:after, .it:after, .ar:after, .ge:after {
+    width: 30px;
+    height: 20px;
+    background: url("../Resources/Brasil.jpg");
+    position: absolute;
+    right: 5px;
+    margin-top: 7px;
+    content: "";
+}
+
+.br:after{
+    background: url("../Resources/Brasil.jpg");
+}
+
+.sp:after{
+   background: url("../Resources/Spain.jpg");
+}
+
+.it:after{
+    background: url("../Resources/Italy.jpg");
+}
+
+.ge:after{
+    background: url("../Resources/Germany.jpg");
+}
+
+/*right flags*/
+.mx, .nl, .en, .bh, .pt{
+    padding-left: 40px;
+    position: relative;
+}
+.mx:before, .nl:before, .en:before, .bh:before, .pt:before{
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    left: 5px;
+    margin-top: 7px;
+    content: "";
+}
+
+.mx:before{
+    background: url("../Resources/Mexico.jpg");
+}
+
+.nl:before{
+    background: url("../Resources/Netherlands.jpg");
+}
+
+.en:before{
+    border: solid 1px #C8C8C8;
+    background: url("../Resources/England.jpg");
+}
+
+.bh:before{
+    background: url("../Resources/Bosnia.jpg");
+}
+
+.pt:before{
+    background: url("../Resources/Portugal.jpg");
+}

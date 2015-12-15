@@ -1,0 +1,98 @@
+div{
+	padding: 0;
+	margin: 0;
+}
+
+.face {
+	 background-color: yellow;
+	 height: 400px;
+	 width: 400px;
+	 border-radius: 200px;
+	 border: 3px solid black;
+	 margin: auto;
+}
+
+.eyes {
+	background-color: white;
+	height: 80px;
+	width: 80px;
+	border-radius: 200px;
+	border: 2.5px solid black;
+}
+
+.eyes:nth-child(1) {
+	position: relative;
+	left: 80px;
+    top: 79px;
+}
+
+.eyes:nth-child(2) {
+	position: relative;
+	left: 244px;
+    top: -3px;
+}
+
+.pupil {
+	background-color: black;
+	height: 25px;
+	width: 25px;
+	border-radius: 200px;
+}
+
+.eyes:first-child .pupil {
+	position: relative;
+	left: 45px;
+    top: 41px;
+}
+
+.eyes:last-child .pupil{
+	position: absolute;
+    left: 722px;
+    top: 86px;
+}
+
+.nose {
+	background-color: red;
+	height: 65px;
+	width: 65px;
+	border-radius: 200px;
+	border: 2.5px solid black;
+	position: absolute;
+    left: 645px;
+    top: 168px
+}
+
+.mouth {
+	background-color: white;
+	height: 80px;
+	width: 183px;
+	border-radius: 200px;
+	border: 2.5px solid black;
+	position: absolute;
+    left: 588px;
+    top: 262px
+}
+
+.tooth {
+	background-color: white;
+	height: 28px;
+	width: 30px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 2.5px solid black;
+	position: absolute;
+    left: 588px;
+    top: 262px
+}
+
+.tooth:nth-child(1){
+	position: absolute;
+    left: 51px;
+    top: -2px;
+}
+
+.tooth:nth-child(2){
+	position: absolute;
+    left: 85px;
+    top: -2px;
+}
