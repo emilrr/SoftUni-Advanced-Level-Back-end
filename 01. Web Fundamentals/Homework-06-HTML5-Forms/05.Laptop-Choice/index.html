@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<title>Laptop Choice</title>
+	<script>
+        function updateTextInput(val, id) {
+            document.getElementById(id).value = val;
+        }
+    </script>	
+</head>
+<body>
+	<div id="wrapper">
+		<h1>Apple's Laptops(6)</h1>
+		<form>
+			<ul>
+				<li class="laptop">
+					<a href="https://www.apple.com/macbook-air/" target="_blank">
+						<h2>Apple Macbook Air</h2>
+						<p>11.6 inch/1.3GHz</p>
+						<p>Haswell</p>
+						<div class="price">
+							<span>$</span>
+							1,729.00
+						</div>
+					</a>
+				</li>
+				<li class="laptop-new">
+					<a href="https://www.apple.com/macbook-air/" target="_blank">
+						<h2>Apple Macbook Air</h2>
+						<p>11.6 inch/1.4GHz</p>
+						<p>Haswell</p>
+						<div class="price">
+							<span>$</span>
+							1,825.00
+						</div>
+					</a>
+				</li>
+				<li class="laptop">
+					<a href="https://www.apple.com/macbook-air/" target="_blank">
+						<h2>Apple Macbook Air</h2>
+						<p>13.3 inch/1.3GHz</p>
+						<p>Haswell</p>
+						<div class="price">
+							<span>$</span>
+							1,919.00
+						</div>
+					</a>
+				</li>
+				<li class="laptop">
+					<a href="https://www.apple.com/macbook-air/" target="_blank">
+						<h2>Apple Macbook Air</h2>
+						<p>13.3 inch/1.4GHz</p>
+						<p>Haswell</p>
+						<div class="price">
+							<span>$</span>
+							1,999.00
+						</div>
+					</a>
+				</li>
+				<li class="laptop">
+					<a href="https://www.apple.com/macbook-air/" target="_blank">
+						<h2>Apple Macbook Air</h2>
+						<p>11.6 inch/1.4GHz</p>
+						<p>Haswell 256GB SSD</p>
+						<div class="price">
+							<span>$</span>
+							2,119.00
+						</div>
+					</a>
+				</li>
+				<li class="laptop-pro">
+					<a href="https://www.apple.com/macbook-air/" target="_blank">
+						<h2>Apple Macbook Pro</h2>
+						<p>13.3 inch/2.5GHz Ivy</p>
+						<p>Bridge</p>
+						<div class="price">
+							<span>$</span>
+							2,529.00
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div id="range-box">
+				<div class="category">
+					<p>Price</p>
+					<span>1700</span>	
+					<span class="end">2600</span>			
+					<input type="range" name="range" min="1700" max="2600" onchange="updateTextInput(this.value,'indicate-price');" step="10" />
+					<input type="text" id="indicate-price" value="1300"/>
+				</div>
+				<div class="category">
+                <p>Ram</p>
+                <span>2048</span>
+                <span class="end">4096</span>
+                <input type="range" name="rangeInput" min="2048" max="4096" onchange="updateTextInput(this.value,'ram');" step="256" />
+                <input type="text" id="ram" value="3072" />
+            </div>
+            <div class="category">
+                <p>Disc</p>
+                <span>100GB</span>
+                <span class="disc">2000GB</span>
+                <input type="range" name="rangeInput" min="100" max="2000" onchange="updateTextInput(this.value,'disc');" step="20" />
+                <input type="text" id="disc" value="1124" />
+            </div>
+            <div class="category">
+                <p>Display</p>
+                <span>11.6</span>
+                <span class="display">18.4</span>
+                <input type="range" name="rangeInput" min="11.6" max="18.4" onchange="updateTextInput(this.value,'display');" step="0.1" />
+                <input type="text" id="display" value="15.3" />
+            </div>
+            <div class="category">
+                <p>Weight</p>
+                <span>1</span>
+                <span class="weight">6</span>
+                <input type="range" name="rangeInput" min="1" max="6" onchange="updateTextInput(this.value,'weight');" step="0.5" />
+                <input type="text" id="weight" value="3" />
+            </div>
+            <div class="category">
+                <p>Warranty</p>
+                <span>12</span>
+                <span class="warr">60</span>
+                <input type="range" name="rangeInput" min="12" max="60" onchange="updateTextInput(this.value,'warranty');" step="1" />
+                <input type="text" id="warranty" value="36" />
+            </div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

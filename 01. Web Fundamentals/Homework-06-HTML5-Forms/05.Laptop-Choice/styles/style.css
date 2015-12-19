@@ -1,0 +1,160 @@
+div#wrapper {
+    display: inline-block;
+    width: 1020px;
+    height: 620px;
+    margin: 10px;
+    border: 4px solid #1e98e8;
+    border-radius: 20px;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+body h1 {
+	color: #2C425A;
+	margin-top: 10px;
+	padding-left: 30px;
+}
+
+body div h2 {
+	color: #2C425A;
+	font-size: 1.2em;
+	margin: 0px;
+}
+
+body div p {
+	color: #495C70;
+	margin: 0px;
+}
+
+span {
+	color: #e5bc1e;
+}
+
+div.price {
+	width: 74px;
+	height: 23px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #2C425A;
+	color: white;
+	margin-top: 107px;
+    margin-right: 3px;
+	float: right;
+}
+
+ul {
+	display: inline-block;
+	width: 665px;
+	margin-left: 0px;
+	margin-top: 5px;
+}
+
+ul li {
+	list-style: none;
+	display: inline-block;
+	width: 190px;
+	height: 220px;
+	padding-top: 5px;
+	border: 3px solid white;
+	margin: 5px;
+}
+
+ul li:hover {
+	border: 3px solid #ED1C24;
+}
+
+ul li.laptop {
+	background-image: url(../images/laptop.png);
+	background-repeat: no-repeat;
+	background-size: 170px 100px;
+	background-position: 20px 80px;
+}
+
+ul li.laptop-new {
+	background-image: url(../images/newLaptop.png);
+	background-repeat: no-repeat;
+	background-size: 170px 100px;
+	background-position: 20px 80px;
+}
+
+ul li.laptop-pro {
+	background-image: url(../images/laptopPro.png);
+	background-repeat: no-repeat;
+	background-size: 170px 100px;
+	background-position: 20px 80px;
+}
+
+ul li a {
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid #D9EEFA;
+	border-radius: 5px;
+	width: 91%;
+	height: 91%;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+div#range-box {
+	display: inline-block;
+	vertical-align: top;
+	background-color: rgba(217, 238, 250, 0.3);
+	width: 250px;
+	border: 1px solid #D9EEFA;
+	padding: 5px;
+}
+
+div.category {
+	height: 86px;
+}
+
+div#wrapper form div#range-box p {
+	text-align: center;
+    margin-bottom: 5px;
+    padding-top: 8px;
+    padding-right: 63px;
+}
+
+input[type="text"] {
+	display: inline;
+	width: 50px;
+	height: 25px;
+	margin-bottom: 20px;
+	text-align: center;
+	position: relative;
+	bottom: 8px;
+}
+
+
+input[type="range"] {
+	width: 188px;
+	height: 25px;
+}
+
+div.category span {
+	color:  #495C70;
+}
+
+span.end {
+	margin-left: 120px;
+}
+
+span.disc{
+	margin-left: 86px;
+}
+
+span.display{
+	margin-left: 127px;
+}
+
+span.weight{
+	margin-left: 167px;
+}
+
+span.warr{
+	margin-left: 152px;
+}
+

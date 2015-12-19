@@ -1,0 +1,114 @@
+.wrapper {
+	width: 960px;
+	height: 493px;
+	background-color: #EEEEEE;
+	font-family: 'PT Sans',Tahoma,sans-serif;
+	padding-left: 15px;
+	padding-top: 3px;
+	margin: auto;
+}
+
+h1 {
+	color: #173A5D;
+}
+
+div > p {
+	color: #737373;
+}
+
+div > div > form > p {
+	font-size: 1.6em;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+
+#new-student {
+	color: #636363;	
+}
+
+#student {
+	color: white;
+	margin-top: 14px;
+}
+
+form {
+	width: 440px;
+	padding-left: 20px;
+	float: left;
+
+}
+
+.right-form {
+	margin-top: 10px;
+	background: #234465;
+	height: 334px;
+}
+span {
+	color: #173A5D;
+	text-transform: uppercase;
+}
+
+input {
+	width: 400px;
+	height: 25px;
+	margin: 8px 0;
+	padding: 8px;
+	font-size: 1em;
+}
+
+input[value="Register"]{
+    width: 183px;
+    font-size: 1.1em;
+    background: #EEEEEE;
+    border: solid 2px #0F3357;
+    color: #173A5D;
+    margin-right: 19px;
+    cursor: pointer;
+}
+
+input[value="Register"]:hover {
+	background: #FFBE4B;
+}
+
+input[type="checkbox"]{
+    display: inline;
+    width: 22px;
+    padding-top: 10px;
+}
+
+input[value="Login"]{
+    width: 140px;
+    background: #234465;
+    border: solid 2px #FFA400;
+    color: white;
+    cursor: pointer;
+}
+
+input[value="Login"]:hover {
+	background: #FFBE4B;
+}
+
+input[type="submit"]{
+    float: right;
+    height: 35px;
+    padding: 6px;
+}
+
+label{
+    vertical-align: super;
+    font-size: 98%;
+    cursor: pointer;
+}
+
+.float-right{
+    display: inline-block;
+    float: right;
+    margin-right: 19px;
+}
+
+a {
+	margin-left: 15px;
+	color: white;
+	font-size: 0.9em;
+}
