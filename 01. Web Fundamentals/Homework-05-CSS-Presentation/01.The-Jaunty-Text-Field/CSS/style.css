@@ -1,0 +1,99 @@
+#rectangle {
+	width: 480px;
+	height: 200px;
+	margin: auto;
+	padding: 10px;
+	border-top: 5px dotted #FFFB09;
+	border-right: 10px solid #08930F;
+	border-bottom: 7px double #1B24A4;
+	border-left: 6px dashed #FA0606;
+	box-shadow: 11px 11px 6px #585B5E;
+}
+
+h1 {
+	text-align: center;
+	font-family: Arial;
+	font-weight: normal;
+	text-shadow: 2px 5px 27px #7F888E
+}
+
+p {
+    text-align: center;
+    font-size: 1.25em;
+    margin: 10px;
+}
+
+#inner-box {
+    border-radius: 50px;
+    border: 2px solid #FF1A1A;
+    box-shadow: 0 0 0 2px #FBFD00, 0 0 0 4px #006F21, 0 0 0 6px #0028AE;
+    margin: 40px 10px 10px 10px;
+    width: 300;
+    height: 80px;
+}
+
+#small-circle {
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.6);
+    left: 813px;
+    top: 153px;
+    border: 3px dashed white;
+    box-shadow: 0 0 0 3px rgba(128, 128, 128, 0.6);  
+}
+
+#large-circle {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.6);
+    left: 861px;
+    top: 117px;
+    border: 3px dashed white;
+    box-shadow: 0 0 0 3px rgba(128, 128, 128, 0.6);  
+}
+
+#text-balloon {
+    border-radius: 50px;
+    width: 115px;
+    height: 50px;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.6);
+    left: 905px;
+    top: 55px;
+    border: 3px dashed white;
+    box-shadow: 0 0 0 3px rgba(128, 128, 128, 0.6);  
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.05em;
+    padding-top: 7px;
+}
+
+textarea {
+    resize: none;
+    color: black;
+    width: 170px;
+    height: 15px;
+    padding: 2px;
+    text-align: center;
+    background-color: #D8921A;
+    border-bottom: 3px solid #A56401;
+    border-right: 3px solid #A56401;
+    border-top: 3px solid #FCA401;
+    border-left: 3px solid #FCA401;
+	overflow: auto;
+}
+
+#left {
+    left: 45px;
+    position: relative;
+}
+
+#right {
+    right: -58px;
+    position: relative;
+}
