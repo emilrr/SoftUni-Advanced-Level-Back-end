@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculate Expression</title>
+    <script defer src="script/calcExpression.js"></script>
+    <style>
+        input[type=text] {
+            width: 200px;
+            height: 20px;
+            display: block;
+            border: none;
+            outline: 0;
+            background: #234456;
+            padding: 10px;
+            color: #234465;
+        }
+        input[type=button] {
+            height: 40px;
+            margin: 10px 65px;
+            border: 1px solid black;
+            background: #fff;
+            cursor: pointer;
+        }
+        input[type=button]:hover {
+            background: #ddd;
+        }
+        p {
+            margin: 0;
+            width: 200px;
+            height: 20px;
+            background: #234456;
+            padding: 10px;
+            height: 20px;
+            color: #234465;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="expression" placeholder="Type equation here." />
+        <input type="button" value="Eval Result" onclick="calcExp()" />
+        <p id="result"></p>
+    </div>
+</body>
+</html>
