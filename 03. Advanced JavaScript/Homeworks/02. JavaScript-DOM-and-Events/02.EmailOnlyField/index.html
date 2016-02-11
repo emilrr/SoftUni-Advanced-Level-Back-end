@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email validation</title>
+    <style>
+        div{
+            width: 173px;
+            height: 20px;
+        }
+    </style>
+    <script>
+        function validateEmail(){
+            var input = document.getElementById('field').value;
+            var email = document.getElementById('result');
+            var reg = /[^@]+@softuni\.bg/g;
+            if(reg.test(input)){
+                result.style.backgroundColor = '#90EE90';
+            }
+            else{
+                result.style.backgroundColor = '#FF0000';
+            }
+
+            result.innerHTML = input;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" value="" id="field"/>
+    <div id="result"></div>
+    <input type="button" value="Validate" onclick="validateEmail()"/>
+</body>
+</html>

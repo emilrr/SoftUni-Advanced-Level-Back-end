@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create A Paragraph Generator Function</title>
+    <script>
+        function createParagraph() {
+            var text = document.getElementById('text').value;
+            var wrapper = document.getElementById('wrapper');
+            var p = document.createElement('p');
+            wrapper.appendChild(p);
+
+            p.innerHTML = text;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" value="" id="text" />
+    <input type="button" value="Generate" onclick="createParagraph()" />
+    <div id="wrapper"></div>
+</body>
+</html>
